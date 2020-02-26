@@ -1,0 +1,296 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins';
+    margin: 0px;
+}
+
+.logo{
+    margin: 20px 0 0 20px;
+}
+
+.about{
+    display: inline; 
+    position: relative; 
+    bottom: -30px;
+    left: 10px;
+    display: none;
+}
+
+.lines{
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    display: none;
+}
+
+.line1{
+    background-color: black;
+    width: 33px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+.line{
+    background-color: black;
+    width: 33px;
+    height: 2px;
+}
+
+.bars{
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+
+.deskIcon{
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    display: none;
+}
+
+.iconPad{
+    margin-right: 30px;
+    display: none;
+}
+
+h1{
+    font-size: 2.5em;
+    color:#4c95fc;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+.margin{
+    margin: 20px 25px 0 25px;
+    font-family: 'Poppins';
+}
+
+p{
+    font-weight: 300;
+    font-size: 1em;
+    font-family: 'Poppins';
+}
+
+.blueBar{
+    background-color: #4c95fc;
+    width: 100vw;
+    display: inline-block;
+    margin: 0px;
+    font-family: 'Poppins';
+}
+
+.barNum{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    font-family: 'Poppins';
+}
+
+.barWriting{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    margin: 0 25px 0 25px;
+}  
+
+.space{
+    padding: 20px 0 20px 0;
+}
+
+h3{
+    margin: 0 25px 0px 25px;
+    color: #4c95fc;
+    font-size: 28.8px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+
+.custom{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: -10px;
+}
+
+.custom2{
+    width: 90px;
+    height: 45px;
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+}
+
+.custom3{
+    width: 90px;
+    height: 70px;
+    position: relative;
+    bottom: -10px;
+}
+
+.customWriter{
+    font-weight: 300;
+    font-size: 1em;
+    float: right;
+    width: 210px;
+    margin: 0px;
+    padding-left: 1;
+}
+
+.tag{
+    text-align: right;
+    font-style: italic;
+}
+
+button{
+    background-color: #4c95fc;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    position: relative;
+    left: 110px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a{
+    color: #4c95fc;
+    text-decoration-line: underline;
+}
+
+button.paddingBut{
+    width: 200px;
+    left: 80px;
+}
+
+.founders{
+    width: 300px;
+    height: 115px;
+}
+
+div h3{
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+
+.found{
+    text-align: center;
+}
+
+.names{
+    font-size: 1em;
+}
+
+.stroke{
+    width:100vw;
+    height: 5vh;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        margin: 40px 0 0 20px;
+    }
+
+    .page1{
+        margin: 0 100px 0 100px;
+        width: auto;
+    }
+
+    .space{
+        padding: 0px;
+    }
+
+    .custom{
+        margin: 0 0 0 120px;
+    }
+
+    .customWriter{
+        width: 400px;
+        margin-right: 90px;
+        
+    }
+
+    h3{
+        margin: 0 25px 0px 140px;
+    }
+
+    button{
+        left: 310px;
+    }
+
+    .custom2 , .custom3{
+        left: 120px;
+    }
+
+    button.paddingBut{
+        left: 280px;
+    }
+
+    .founders{
+        position: relative;
+        left: 210px;
+    }
+
+    .found{
+        position: relative;
+        left: 110px;
+        width: 500px;
+    }
+
+    .stroke{
+        width:70vw;
+        height: 3vh;
+        position: relative;
+        left: 150px;
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width:  1110px){
+    .logo{
+        margin: 40px 0 0 60px;
+    }
+    .about{
+        display: inline;
+    }
+
+    .bars{
+        display: none;
+    }
+
+    .deskIcon{
+        display: inline;
+    }
+    
+    .iconPad{
+        display: inline;
+    }
+
+    .page1{
+        margin: 0 180px 0 180px;
+        width: auto;
+    }
+
+    .page1 h1{
+        font-size: 46px;
+    }
+
+    
+}
