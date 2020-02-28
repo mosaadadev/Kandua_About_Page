@@ -7,10 +7,13 @@ body{
     margin: 0px;
 }
 
+/* styling of logo */
 .logo{
     margin: 20px 0 0 20px;
+    text-decoration: none;
 }
 
+/* about text on desktop */
 .about{
     display: inline; 
     position: relative; 
@@ -21,6 +24,7 @@ body{
     font-size: 16px;
 }
 
+/* bars on mobile */
 .lines{
     width: 10px;
     height: 2px;
@@ -47,6 +51,7 @@ body{
     top: 40px;
 }
 
+/* icons for desktop */
 .deskIcon{
     position: absolute;
     right: 25px;
@@ -59,24 +64,29 @@ body{
     display: none;
 }
 
+/* h1 styling */
 h1{
     font-size: 2.5em;
     color:#4c95fc;
     font-family: 'Poppins';
     overflow: hidden;
+    text-align: center;
 }
 
+/* margin of divs */
 .margin{
     margin: 20px 25px 0 25px;
     font-family: 'Poppins';
 }
 
+/* p tags */
 p{
     font-weight: 300;
     font-size: 1em;
     font-family: 'Poppins';
 }
 
+/* bluebar styling */
 .blueBar{
     background-color: #4c95fc;
     width: 100vw;
@@ -85,17 +95,19 @@ p{
     font-family: 'Poppins';
 }
 
+/* numbers on blue bar */
 .barNum{
     color: white;
     font-size: 2em;
     font-weight: 500;
     text-align: center;
-    line-height: 32px;
+    line-height: 40px;
     margin: 10px 0 10px 0;
     overflow: hidden;
     font-family: 'Poppins';
 }
 
+/* small writing in blue bar */
 .barWriting{
     font-size: 15px;
     color: white;
@@ -104,10 +116,12 @@ p{
     margin: 0 25px 0 25px;
 }  
 
+/* space for the second number in blue bar  */
 .space{
     padding: 20px 0 20px 0;
 }
 
+/* h3 styling */
 h3{
     margin: 0 25px 0px 25px;
     color: #4c95fc;
@@ -115,9 +129,19 @@ h3{
     font-weight: 500;
     font-family: 'Poppins';
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin-left: 0px; */
 }
 
+/* putting some h3 in the center */
+h3.last , h3.names{
+    justify-content: center;
+    margin: 0px;
+}
 
+/* custom are all the small images styling */
 .custom{
     width: 90px;
     height: 90px;
@@ -125,6 +149,7 @@ h3{
     bottom: -10px;
 }
 
+/* the first partner logo styling */
 .custom2{
     width: 90px;
     height: 45px;
@@ -133,6 +158,7 @@ h3{
     text-align: center;
 }
 
+/* the second partner logo styling */
 .custom3{
     width: 90px;
     height: 70px;
@@ -140,6 +166,7 @@ h3{
     bottom: -10px;
 }
 
+/* the comments left but the customers, pro, team and partners  */
 .customWriter{
     font-weight: 300;
     font-size: 1em;
@@ -149,42 +176,57 @@ h3{
     padding-left: 1;
 }
 
+/* the names of the person who wrote the comment */
 .tag{
     text-align: right;
     font-style: italic;
 }
 
-button {
+/* the button styling */
+button{
     background-color: #4c95fc;
     color: white;
     font-size: 16px;
     width: 150px;
     height: 60px;
     border: none;
-    position: relative;
-    left: 110px;
+    padding: 0px;
+    /* position: relative;
+    left: 110px; */
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1em;
+    text-decoration: none;
+}
+
+/* the longer button styling */
+.butt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 a{
     color: #4c95fc;
+    text-decoration-line: underlines;
 }
 
 button.paddingBut{
     width: 200px;
-    left: 80px;
 }
 
+/* founder styling */
 .founders{
-    width: 300px;
-    height: 115px;
+    height: auto;
+    width: -webkit-fill-available;
 }
 
-div h3{
-    text-align: center;
-    margin: 25px 0 10px 0;
+
+.groupFounders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .found{
@@ -197,23 +239,32 @@ div h3{
 
 .stroke{
     width:100vw;
-    height: 5vh;
+    height: 5vh;  
 }
 
-/* @media only screen and (min-width: 240px){
-    p{
-        font-size: 12px;
-    }
-    p.customWriter{
-
-        font-size:  0;
+/* smaller devices (240px and up) */
+@media only screen and (min-width: 240px){
+    .custom{
+        bottom: 0px;
 
     }
 
-} */
+    .custom2 , .custom3{
+        bottom: 0px;
+    }
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    p{
+        font-size:16px;
+
+    }
+
+    .customWriter{
+        font-size:16px;
+    }
     .logo{
         margin: 40px 0 0 20px;
     }
@@ -239,7 +290,7 @@ div h3{
 
     h3{
         font-size: 32px!important;
-        margin: 0 0px 0px 140px;
+        margin-left: 160px;
     }
 
     button{
@@ -254,11 +305,6 @@ div h3{
         left: 280px;
     }
 
-    .founders{
-        position: relative;
-        left: 210px;
-    }
-
     .found{
         position: relative;
         left: 110px;
@@ -271,20 +317,92 @@ div h3{
         position: relative;
         left: 150px;
     }
-
-    p{
-        font-size: 1.5em;
-    }
 }
 
-@media only screen and (min-width:  1110px){
-    /* .margin{
+/* Devices (1280px and up) */
+@media only screen and (min-width:  1280px){
+    p{
+        font-size:22.4px!important;
+    }
+    .margin{
         margin: 50px 25px 0 50px;
         font-family: 'Poppins';
-    } */
+    } 
     .logo{
         margin: 40px 0 0 60px;
     }
+    .about{
+        display: inline;
+    }
+
+    .bars{
+        display: none;
+    }
+
+    .deskIcon{
+        display: inline;
+    }
+    
+    .iconPad{
+        display: inline;
+    }
+
+    .page1{
+        margin: 0px 180px 30px 180px;
+        width: auto;
+    }
+
+    .customWriter{
+        width: 900px;
+        margin-right: 90px;
+    }
+    .founder p.found{
+        width: 800px;
+        left:380px;
+    }
+
+    p.back{
+        margin: 0 0 0 450px;
+    }
+
+    .stroke{
+        width:80vw;
+        height: 7vh;
+    }
+
+    button{
+        left: 740px;
+    }
+
+    button.paddingBut{
+        left: 720px;
+    }
+
+    .rowdiv , .names{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .custom{
+        margin: 0 0 0 160px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* large devices (disktop laptop, 1920px and up) */
+@media only screen and (min-width:  1920px){
+    .margin{
+        margin: 50px 25px 0 50px;
+        font-family: 'Poppins';
+    } 
+
+    .logo{
+        margin: 40px 0 0 60px;
+    }
+
     .about{
         display: inline;
     }
@@ -310,10 +428,6 @@ div h3{
         font-size: 48px;
     }
 
-    p{
-        font-size: 22.4px;
-    }
-
     h2.barNum{
         font-size: 40px;
     }
@@ -322,19 +436,14 @@ div h3{
         font-size: 16px;
     }
     div.blueBar{
-        margin: 20px 0 20px 0px;
-        padding: 0 100px 0 70px;
+        margin: 0px 0 20px 0px;
         text-align: center;
-    }
-
-    h3{
-        margin: 0 0px 0px 180px;
     }
 
     .custom{
         margin: 0 0 0 160px;
-        width: 120px;
-        height: 120px;
+        width: 300px;
+        height: 300px;
     }
 
     .customWriter{
@@ -356,23 +465,32 @@ div h3{
     }
 
     button{
-        left: 675px;
+        left: 980px;
+        width:180px;
+        height: 80px;
+        font-size: 25px!important;
     }
 
     .custom2 , .custom3{
+        width: 200px;
+        height: 120px;
         left: 160px;
     }
 
+    .custom3{
+        width: 180px;
+    }
+
     button.paddingBut{
-        left: 660px;
+        left: 930px;
+        width: 250px;
+        height: 100px;
+        font-size: 25px;
     }
 
     h3.names{
         font-size: 16px;
-    }
-
-    .founders{
-        left: 230px;
+        margin: 0px;
     }
 
     .stroke{
@@ -382,24 +500,13 @@ div h3{
         left: 150px;
     }
 
-    .founder{
-        width: 50vw;
-    }
-
-    .founder.one{
-        position: absolute;
-        left: 650px;
-        bottom: -3300px;
-
-    }
-
     .stroke{
-        width:80vw;
-        height: 8vh;
+        width:90vw;
+        height: 10vh;
     }
 
     p.back{
-        margin: 0 0 0 400px;
+        margin: 0 0 0 720px;
     
     }
-} 
+}  
