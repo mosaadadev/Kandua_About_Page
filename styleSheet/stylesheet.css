@@ -1,0 +1,512 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins';
+    margin: 0px;
+}
+
+/* styling of logo */
+.logo{
+    margin: 20px 0 0 20px;
+    text-decoration: none;
+}
+
+/* about text on desktop */
+.about{
+    display: inline; 
+    position: relative; 
+    bottom: -20px;
+    left: 10px;
+    display: none;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+
+/* bars on mobile */
+.lines{
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    display: none;
+}
+
+.line1{
+    background-color: black;
+    width: 33px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+.line{
+    background-color: black;
+    width: 33px;
+    height: 2px;
+}
+
+.bars{
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+/* icons for desktop */
+.deskIcon{
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    display: none;
+}
+
+.iconPad{
+    margin-right: 30px;
+    display: none;
+}
+
+/* h1 styling */
+h1{
+    font-size: 2.5em;
+    color:#4c95fc;
+    font-family: 'Poppins';
+    overflow: hidden;
+    text-align: center;
+}
+
+/* margin of divs */
+.margin{
+    margin: 20px 25px 0 25px;
+    font-family: 'Poppins';
+}
+
+/* p tags */
+p{
+    font-weight: 300;
+    font-size: 1em;
+    font-family: 'Poppins';
+}
+
+/* bluebar styling */
+.blueBar{
+    background-color: #4c95fc;
+    width: 100vw;
+    display: inline-block;
+    margin: 0px;
+    font-family: 'Poppins';
+}
+
+/* numbers on blue bar */
+.barNum{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+    font-family: 'Poppins';
+}
+
+/* small writing in blue bar */
+.barWriting{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    margin: 0 25px 0 25px;
+}  
+
+/* space for the second number in blue bar  */
+.space{
+    padding: 20px 0 20px 0;
+}
+
+/* h3 styling */
+h3{
+    margin: 0 25px 0px 25px;
+    color: #4c95fc;
+    font-size: 28.8px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin-left: 0px; */
+}
+
+/* putting some h3 in the center */
+h3.last , h3.names{
+    justify-content: center;
+    margin: 0px;
+}
+
+/* custom are all the small images styling */
+.custom{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: -10px;
+}
+
+/* the first partner logo styling */
+.custom2{
+    width: 90px;
+    height: 45px;
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+}
+
+/* the second partner logo styling */
+.custom3{
+    width: 90px;
+    height: 70px;
+    position: relative;
+    bottom: -10px;
+}
+
+/* the comments left but the customers, pro, team and partners  */
+.customWriter{
+    font-weight: 300;
+    font-size: 1em;
+    float: right;
+    width: 210px;
+    margin: 0px;
+    padding-left: 1;
+}
+
+/* the names of the person who wrote the comment */
+.tag{
+    text-align: right;
+    font-style: italic;
+}
+
+/* the button styling */
+button{
+    background-color: #4c95fc;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    padding: 0px;
+    /* position: relative;
+    left: 110px; */
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* the longer button styling */
+.butt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+a{
+    color: #4c95fc;
+    text-decoration-line: underlines;
+}
+
+button.paddingBut{
+    width: 200px;
+}
+
+/* founder styling */
+.founders{
+    height: auto;
+    width: -webkit-fill-available;
+}
+
+
+.groupFounders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.found{
+    text-align: center;
+}
+
+.names{
+    font-size: 1em;
+}
+
+.stroke{
+    width:100vw;
+    height: 5vh;  
+}
+
+/* smaller devices (240px and up) */
+@media only screen and (min-width: 240px){
+    .custom{
+        bottom: 0px;
+
+    }
+
+    .custom2 , .custom3{
+        bottom: 0px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p{
+        font-size:16px;
+
+    }
+
+    .customWriter{
+        font-size:16px;
+    }
+    .logo{
+        margin: 40px 0 0 20px;
+    }
+
+    .page1{
+        margin: 0 100px 0 100px;
+        width: auto;
+    }
+
+    .space{
+        padding: 0px;
+    }
+
+    .custom{
+        margin: 0 0 0 120px;
+    }
+
+    .customWriter{
+        width: 400px;
+        margin-right: 90px;
+        
+    }
+
+    h3{
+        font-size: 32px!important;
+        margin-left: 160px;
+    }
+
+    button{
+        left: 310px;
+    }
+
+    .custom2 , .custom3{
+        left: 120px;
+    }
+
+    button.paddingBut{
+        left: 280px;
+    }
+
+    .found{
+        position: relative;
+        left: 110px;
+        width: 500px;
+    }
+
+    .stroke{
+        width:70vw;
+        height: 3vh;
+        position: relative;
+        left: 150px;
+    }
+}
+
+/* Devices (1280px and up) */
+@media only screen and (min-width:  1280px){
+    p{
+        font-size:22.4px!important;
+    }
+    .margin{
+        margin: 50px 25px 0 50px;
+        font-family: 'Poppins';
+    } 
+    .logo{
+        margin: 40px 0 0 60px;
+    }
+    .about{
+        display: inline;
+    }
+
+    .bars{
+        display: none;
+    }
+
+    .deskIcon{
+        display: inline;
+    }
+    
+    .iconPad{
+        display: inline;
+    }
+
+    .page1{
+        margin: 0px 180px 30px 180px;
+        width: auto;
+    }
+
+    .customWriter{
+        width: 900px;
+        margin-right: 90px;
+    }
+    .founder p.found{
+        width: 800px;
+        left:380px;
+    }
+
+    p.back{
+        margin: 0 0 0 450px;
+    }
+
+    .stroke{
+        width:80vw;
+        height: 7vh;
+    }
+
+    button{
+        left: 740px;
+    }
+
+    button.paddingBut{
+        left: 720px;
+    }
+
+    .rowdiv , .names{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .custom{
+        margin: 0 0 0 160px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* large devices (disktop laptop, 1920px and up) */
+@media only screen and (min-width:  1920px){
+    .margin{
+        margin: 50px 25px 0 50px;
+        font-family: 'Poppins';
+    } 
+
+    .logo{
+        margin: 40px 0 0 60px;
+    }
+
+    .about{
+        display: inline;
+    }
+
+    .bars{
+        display: none;
+    }
+
+    .deskIcon{
+        display: inline;
+    }
+    
+    .iconPad{
+        display: inline;
+    }
+
+    .page1{
+        margin: 0 180px 0 180px;
+        width: auto;
+    }
+
+    .page1 h1{
+        font-size: 48px;
+    }
+
+    h2.barNum{
+        font-size: 40px;
+    }
+
+    p.barWriting{
+        font-size: 16px;
+    }
+    div.blueBar{
+        margin: 0px 0 20px 0px;
+        text-align: center;
+    }
+
+    .custom{
+        margin: 0 0 0 160px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .customWriter{
+        font-weight: 300;
+        font-size: 1em;
+        width: 980px;
+        margin:10px 180px 0 0;
+        font-size: 22.4px;
+    }
+
+    p.customWriter.tag{
+        margin:10px 200px 0 0;
+        position: relative;
+        bottom: 60px;
+    }  
+    
+    p.customWriter.tag.pat{
+        bottom: 20px;
+    }
+
+    button{
+        left: 980px;
+        width:180px;
+        height: 80px;
+        font-size: 25px!important;
+    }
+
+    .custom2 , .custom3{
+        width: 200px;
+        height: 120px;
+        left: 160px;
+    }
+
+    .custom3{
+        width: 180px;
+    }
+
+    button.paddingBut{
+        left: 930px;
+        width: 250px;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    h3.names{
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    .stroke{
+        width:70vw;
+        height: 3vh;
+        position: relative;
+        left: 150px;
+    }
+
+    .stroke{
+        width:90vw;
+        height: 10vh;
+    }
+
+    p.back{
+        margin: 0 0 0 720px;
+    
+    }
+}  
